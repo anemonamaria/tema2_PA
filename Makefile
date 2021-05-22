@@ -1,5 +1,7 @@
+CFLAGS=-Wall -std=c++11
+# g++ $(CFLAGS)
 build:
-	gcc poduri.c -o poduri
+	g++ $(CFLAGS) poduri.cpp -o poduri
 	gcc adrese.c -o adrese
 	gcc lego.c -o lego
 	gcc retea.c -o retea

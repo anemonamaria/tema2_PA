@@ -1,0 +1,15 @@
+./lego.c:4:  Missing space before {  [whitespace/braces] [5]
+./lego.c:5:  Redundant blank line at the start of a code block should be deleted.  [whitespace/blank_line] [2]
+./lego.c:7:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
+./adrese.c:4:  Missing space before {  [whitespace/braces] [5]
+./adrese.c:5:  Redundant blank line at the start of a code block should be deleted.  [whitespace/blank_line] [2]
+./adrese.c:7:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
+./retea.c:4:  Missing space before {  [whitespace/braces] [5]
+./retea.c:5:  Redundant blank line at the start of a code block should be deleted.  [whitespace/blank_line] [2]
+./retea.c:7:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
+Done processing ./poduri.cpp
+Done processing ./lego.c
+Done processing ./adrese.c
+Done processing ./_utils/verif.cpp
+Done processing ./retea.c
+Total errors found: 9
