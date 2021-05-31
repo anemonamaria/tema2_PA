@@ -1,0 +1,43 @@
+Moraru Anemona-Maria
+323CC
+Iunie 2021
+
+Tema 2
+Proiectarea Algoritmilor
+
+Exercitiul 1 ~ poduri.cpp
+
+Complexitatea acestei rezolvari este O(t), t este numarul de noduri pe care
+ajunge sa le verifice pana la prima iesire.
+
+Initial am creat o structura in care retin pozitia unei celule dar si distanta
+de la sursa pana la  ea.
+Functia 'isValid' verifica daca o pozitie data este valida si se poate realiza
+o mutare in acel loc.
+Functia 'BFS' realizeaza parcurgerea matricii de pozitii. Aici cream o matrice
+in care retinem pozitiile vizitate si realizam o coada in care vom bga si vom
+scoate pozitii. Cat timp exista elemente introduse in coada, verificam celula
+in care ne aflam daca este "destinatie" (caz in care returnam distanta) sau
+daca este pod (caz in care introducem in coada viitoarea pozitie).
+In main realizam citirea inputului si printarea rezultatului functiei BFS.
+
+
+Exercitiul 2 ~ adrese.cpp
+
+Complexitatea acestui exercitiu este O(n*t), unde n este numarul persoanelor
+iar t este numarul mailurilor acestora.
+
+Pentru acest exercitiu am folosit doua structuri, una pentru retinerea persoanelor
+care are nume, numarul mailurilor si conexiunile deja facute (retin indici) si
+una pentru retinerea fiecarui mail in parte cu adresa si indiceele peersoanei
+respective. Aceste 2 structuri folosesc vectorilor la citire.
+Pentru a cauta un mail in lista tuturor celorlalte persoane ma folosesc de 2 for-
+uri pentru a itera o data prin vectorul de persoane si o data prin vectorul de
+mail-uri. Verific daca nu cumva lista mail-ului pe care il caut este chiar lista
+de mail-uri a persoanei curente, apoi verific ca acel indice sa nu se gaseasca
+deja in lista de conexiuni a persoanei si ca mail-ul sa se gaseasca cu unul din
+lista persoanei curente. In caz afirmativ adaug toate mail-urile intr-un singur
+loc, actualizez numarul de mail-uri si tin cont ca acesta sa nu fie adaugat de
+2 ori. Lista de mail-uri este sortata la finalul fiecarei iteratii a primului
+for. Sortez apoi si intregul vector de structuri folosind sort() cu functii
+lambda si printez rezultatul obtinut.
